@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "DELIVORO": {
+    "delivoro": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -27,12 +27,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -62,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "DELIVORO:build:production"
+              "buildTarget": "delivoro:build:production"
             },
             "development": {
-              "buildTarget": "DELIVORO:build:development"
+              "buildTarget": "delivoro:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "DELIVORO:build"
+            "buildTarget": "delivoro:build"
           }
         },
         "test": {
@@ -98,6 +93,6 @@
     }
   },
   "cli": {
-    "analytics": "ee978635-aba8-499f-87db-1c09be11e74b"
+    "analytics": false
   }
 }
